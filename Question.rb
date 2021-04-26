@@ -16,6 +16,6 @@ class Question
   end
 
   def isAnswer?(response)
-    @answer == response
+    @answer == response.to_i
   end
 end
