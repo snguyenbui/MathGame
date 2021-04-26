@@ -6,6 +6,6 @@ class Game
   end
 
   def gameover?
-    @current_player.lives == 0
+    @current_player.lives != 0
   end
 end
