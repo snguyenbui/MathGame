@@ -7,8 +7,8 @@ class Question
   end
 
   def create
-    @value1 = Random.rand(20)
-    @value2 = Random.rand(20)
+    @value1 = Random.rand(21)
+    @value2 = Random.rand(21)
     test = Random.rand(5)
 
     if test == 0
@@ -22,7 +22,7 @@ class Question
     elsif test == 4
       @operand = :%
     end
-    
+
     @answer = @value1.public_send(@operand, @value2)
   end
 
