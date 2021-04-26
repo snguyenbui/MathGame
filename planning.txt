@@ -8,8 +8,6 @@ Classes
       ask: asks the question
       isAnswer?: takes response and compares to answer. prints appropriate response
 
-   
-
   Player(lives)
     Keeps track of lives
     @lives
