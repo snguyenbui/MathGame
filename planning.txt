@@ -1,0 +1,22 @@
+Classes 
+  Question
+    Generates two values and prints the question to the player. Takes the response from the player and checks if that matches the answer. 
+    @value1
+    @value2
+    @answer
+      create: generates two new values
+      ask: asks the question
+      isAnswer?: takes response and compares to answer. prints appropriate response
+
+   
+
+  Player(lives)
+    Keeps track of lives
+    @lives
+      set_lives: sets the life count of the player
+
+  Game
+    Handles game looping and keeps track of the active player. Loops until a player has 0 lives
+    @current_player
+      current_player: get/set player turn
+      gameover?(current_player): checks player life count to either print gameover or next turn then sets the turn 
