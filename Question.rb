@@ -1,5 +1,4 @@
 class Question 
-  attr_accessor :value1, :value2
   def initialize
     @value1
     @value2
@@ -9,5 +8,10 @@ class Question
   def create
     @value1 = Random.rand(20)
     @value2 = Random.rand(20)
+    @answer = @value1 + @value2
+  end
+
+  def ask
+    puts "What is #{@value1} + #{@value2}?"
   end
 end
