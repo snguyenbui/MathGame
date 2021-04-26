@@ -14,4 +14,8 @@ class Question
   def ask
     puts "What is #{@value1} + #{@value2}?"
   end
+
+  def isAnswer?(response)
+    @answer == response
+  end
 end
