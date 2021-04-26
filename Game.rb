@@ -5,7 +5,7 @@ class Game
     @current_player
   end
 
-  def gameover?
+  def not_over?
     @current_player.lives != 0
   end
 end
