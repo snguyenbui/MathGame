@@ -18,11 +18,15 @@ while(game.not_over?)
   question.create()
   question.ask()
   response = gets.chomp
-
+  
   if !question.isAnswer?(response)
+    puts "Life lost!"
     game.current_player.lives += -1
   end
-
+  
+  puts "Lives left: #{game.current_player.lives}"
+  puts "-----------------------------"
+  
   if game.not_over?
     if game.current_player == player1
       puts "#############################"
